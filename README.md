@@ -13,7 +13,16 @@ import vActionSheet from '../../components/actionSheet'
 ```
 
 ```html
-<v-actionSheet text="这里是辅助提示文本" v-if="showSelectMulti" :list="list" :multiple="multiple" :default-props="defaultProps" :select-list="selectList" @submitSelect="submitSelect" @cancelSelect="cancelSelect"> </v-actionSheet>
+<v-actionSheet
+  text="这里是辅助提示文本"
+  v-if="showSelectMulti"
+  :list="list"
+  :multiple="multiple"
+  :default-props="defaultProps"
+  :select-list="selectList"
+  @submitSelect="submitSelect"
+  @cancelSelect="cancelSelect">
+</v-actionSheet>
 ```
 
 ### Props
@@ -42,7 +51,12 @@ import vDropDown from '../../components/dropdown'
 ```
 
 ```html
-<v-dropDown :list="list" :default-props="defaultProps" :select-item="selectItem" @selectChange="selectChange"> </v-dropDown>
+<v-dropDown
+  :list="list"
+  :default-props="defaultProps"
+  :select-item="selectItem"
+  @selectChange="selectChange">
+</v-dropDown>
 ```
 
 ### Props
