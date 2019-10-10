@@ -3,15 +3,12 @@
     <div class="list">
       <div class="listItem" v-for="(item,index) in list" :key="index" @click="toUrl(item)">{{item.name}}</div>
     </div>
-    <footerBar></footerBar>
   </div>
 </template>
 
 <script>
-import footerBar from '../../components/footerBar'
 export default {
   name: 'index',
-  components: { footerBar },
   data () {
     return {
       list: [

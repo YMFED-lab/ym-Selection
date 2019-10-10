@@ -8,17 +8,13 @@
       <div>请选择一个选择（多选）</div>
       <div>{{selectListString}}</div>
     </div>
-    <k-actionSheet v-if="showSelectOne" :list="list" :multiple="multiple" :default-props="defaultProps"
-                 :select-item="selectItem" title="这里是提示文本" text="这里是辅助提示文本"
-                 @submitSelect="submitSelect" @cancelSelect="cancelSelect"></k-actionSheet>
-    <k-actionSheet v-if="showSelectMulti" :list="list" :multiple="multiple" :default-props="defaultProps"
-                 :select-list="selectList" text="这里是辅助提示文本"
-                 @submitSelect="submitSelect" @cancelSelect="cancelSelect"></k-actionSheet>
+    <v-actionSheet v-if="showSelectOne" :list="list" :multiple="multiple" :default-props="defaultProps" :select-item="selectItem" title="这里是提示文本" subTitle="这里是辅助提示文本" @submitSelect="submitSelect" @cancelSelect="cancelSelect"></v-actionSheet>
+    <v-actionSheet v-if="showSelectMulti" :list="list" :multiple="multiple" :default-props="defaultProps" :select-list="selectList" subTitle="这里是辅助提示文本" @submitSelect="submitSelect" @cancelSelect="cancelSelect"></v-actionSheet>
   </div>
 </template>
 
 <script>
-import kActionSheet from '../../components/actionSheet'
+import vActionSheet from '../../components/actionSheet'
 export default {
   name: 'actionSheet',
   data () {
@@ -49,7 +45,7 @@ export default {
       ]
     }
   },
-  components: {kActionSheet},
+  components: { vActionSheet },
   methods: {
     toSelect (num) {
       if (num === 1) {
@@ -88,7 +84,8 @@ export default {
 </script>
 
 <style scoped>
-.title,.title-multi{
+.title,
+.title-multi {
   /* height: 1rem; */
   background-color: #fff;
   padding: 0.22rem 0.3rem;
@@ -96,7 +93,7 @@ export default {
   line-height: 0.56rem;
   margin-bottom: 0.2rem;
 }
-  /* .title-multi{
+/* .title-multi{
     background-color: #fff;
     padding: 0.22rem 0.3rem;
     font-size: 0.32rem;

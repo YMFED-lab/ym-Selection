@@ -3,7 +3,7 @@
     <div class="box">
       <div class="top">
         <div class="title" v-text="title" v-if="title"></div>
-        <div class="text" v-text="text" v-if="text"></div>
+        <div class="text" v-text="subTitle" v-if="subTitle"></div>
       </div>
       <div class="selectList">
         <div class="listItem" v-for="(item,index) in list" :key="index" @click="toSelect(item,index)">
@@ -31,9 +31,9 @@ export default {
   props: {
     title: {
       type: String,
-      default: '标题'
+      default: '请选择'
     },
-    text: {
+    subTitle: {
       type: String,
       default: '副标题'
     },

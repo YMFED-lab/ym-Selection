@@ -1,22 +1,12 @@
 <template>
   <div>
-    <k-dropDown :list="list" @selectChange="selectChange"
-              :default-props="defaultProps" :select-item="selectItem"></k-dropDown>
-    <!--<div class="item">-->
-      <!--<radio :list="list" @selectChange="selectChange"></radio>-->
-    <!--</div>-->
-    <!--<div class="item">-->
-      <!--<dropDown :list="list" @selectChange="selectChange"></dropDown>-->
-    <!--</div>-->
-    <!--<div class="title" @click="toSelect">弹窗选择</div>-->
-    <!--<selectBox :list="list" @submitSelect="submitSelect" @cancelSelect="cancelSelect" v-if="showSelect"></selectBox>-->
+    <v-dropDown :list="list" @selectChange="selectChange"
+              :default-props="defaultProps" :select-item="selectItem"></v-dropDown>
   </div>
 </template>
 
 <script>
-// import radio from '../components/radio'
-import kDropDown from '../../components/dropdown'
-// import selectBox from '../components/selectBox'
+import vDropDown from '../../components/dropdown'
 export default {
   name: 'dropDown',
   data () {
@@ -37,8 +27,7 @@ export default {
       }
     }
   },
-  // components: { radio, dropdown, selectBox },
-  components: { kDropDown },
+  components: { vDropDown },
   methods: {
     selectChange (val) {
       alert(val[this.defaultProps.name])
