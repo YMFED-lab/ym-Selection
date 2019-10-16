@@ -1,13 +1,14 @@
-# vue-component
+# ym-Selection
 
 ## Introduction
 
 actionSheet 和 dropDown 是由用户操作后触发的一种选择弹出框 ，呈现一组与当前情境相关的一个或多个选项。
 
+## 1、actionSheet
 <img src="./src/assets/img2.gif" width="25%" height="25%" />
 
-## actionSheet
 
+### Usage
 ```
 import vActionSheet from '../../components/actionSheet'
 ```
@@ -44,7 +45,10 @@ import vActionSheet from '../../components/actionSheet'
 | submitSelect | selectItem/ selectList | 选择后的回调 |
 | cancelSelect | /                      | 取消选择     |
 
-## dropDown
+## 2、dropDown
+<img src="./src/assets/img1.gif" width="25%" height="25%" />
+
+### Usage
 
 ```
 import vDropDown from '../../components/dropdown'

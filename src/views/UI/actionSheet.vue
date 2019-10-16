@@ -93,10 +93,4 @@ export default {
   line-height: 0.56rem;
   margin-bottom: 0.2rem;
 }
-/* .title-multi{
-    background-color: #fff;
-    padding: 0.22rem 0.3rem;
-    font-size: 0.32rem;
-    line-height: 0.56rem;
-  } */
 </style>

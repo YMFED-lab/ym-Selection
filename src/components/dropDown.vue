@@ -3,7 +3,7 @@
     <div class="top">
       <div class="title pr" @click="showSelectList" :class="showList ? 'add-border' : ''">
         {{list[selectIndex][defaultProps.name]}}
-        <img src="../assets/img/down-icon.png" :class="showList ? 'down-icon-up' : ''"
+        <img src="../assets/down-icon.png" :class="showList ? 'down-icon-up' : ''"
              alt="" class="down-icon">
       </div>
     </div>

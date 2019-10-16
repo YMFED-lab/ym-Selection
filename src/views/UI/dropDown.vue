@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-dropDown :list="list" @selectChange="selectChange"
-              :default-props="defaultProps" :select-item="selectItem"></v-dropDown>
+    <v-dropDown :list="list" @selectChange="selectChange" :default-props="defaultProps" :select-item="selectItem">
+    </v-dropDown>
   </div>
 </template>
 
@@ -48,11 +48,11 @@ export default {
 </script>
 
 <style scoped lang="less">
-.item{
+.item {
   /*margin-bottom: 10px;*/
   background-color: #fff;
 }
-.title{
+.title {
   height: 45px;
   line-height: 45px;
   padding: 0 15px;
